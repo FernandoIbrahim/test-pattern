@@ -4,7 +4,7 @@
   "description": "Projeto base para o trabalho de teste pattern.",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "coverage": "jest --coverage"
   },
   "devDependencies": {

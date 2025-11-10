@@ -35,7 +35,7 @@ export class CheckoutService {
         try {
             await this.emailService.enviarEmail(
                 carrinho.user.email,
-                "Seu Pedido foi Aprovado!",
+                "Pagamento confirmado!",
                 `Pedido ${pedidoSalvo.id} no valor de R$${totalFinal}`
             );
         } catch (e) {
